@@ -1,8 +1,19 @@
 package com.plass.webapp.control;
 
+import com.plass.webapp.service.EmployeeService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
 public class EmployeeController {
-    public String home()
+
+    @Autowired
+    EmployeeService service;
+    @GetMapping("/")
+    public String home(Model model){
+        Iterable<Employee> ListEmployee = service.getEmployees();
+        return "home";
+    }
 }
