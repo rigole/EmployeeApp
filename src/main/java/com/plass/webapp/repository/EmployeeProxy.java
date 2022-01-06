@@ -1,7 +1,7 @@
 package com.plass.webapp.repository;
 
 import com.plass.webapp.CustomProperties;
-import com.plass.webapp.control.Employee;
+import com.plass.webapp.model.Employee;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.ParameterizedTypeReference;

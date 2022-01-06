@@ -1,4 +1,4 @@
-package com.plass.webapp.control;
+package com.plass.webapp.model;
 
 import lombok.Data;
 

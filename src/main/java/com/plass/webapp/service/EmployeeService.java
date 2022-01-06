@@ -1,7 +1,7 @@
 package com.plass.webapp.service;
 
 
-import com.plass.webapp.control.Employee;
+import com.plass.webapp.model.Employee;
 import com.plass.webapp.repository.EmployeeProxy;
 import lombok.Data;
 import org.springframework.beans.factory.annotation.Autowired;
